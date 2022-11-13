@@ -1,0 +1,29 @@
+.section {
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.section__header {
+    padding: 15px 20px;
+    font-size: 20px;
+}
+
+.section__header--first {
+    border-bottom: 2px solid hsl(0deg 0% 90%);
+}
+
+.section__container {
+    display: grid;
+    align-items: center;
+    border-bottom: 2px solid hsl(0deg 0% 90%);
+    grid-template-columns: 1fr auto;
+}
+
+
+
+
+@media(max-width:767px) {
+    .section__container {
+        grid-template-columns: 100% ;
+    }
+}
