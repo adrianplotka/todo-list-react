@@ -3,7 +3,7 @@
     margin-bottom: 15px;
 }
 
-.section__header {
+.section__title {
     padding: 15px 20px;
     font-size: 20px;
 }
@@ -12,18 +12,15 @@
     border-bottom: 2px solid hsl(0deg 0% 90%);
 }
 
-.section__container {
+.section__header {
     display: grid;
     align-items: center;
     border-bottom: 2px solid hsl(0deg 0% 90%);
     grid-template-columns: 1fr auto;
 }
 
-
-
-
 @media(max-width:767px) {
-    .section__container {
+    .section__header {
         grid-template-columns: 100% ;
     }
 }
