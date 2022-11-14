@@ -1,6 +1,7 @@
 .form {
     padding: 20px;
     display: flex;
+    gap: 15px;
     justify-content: space-between;
 }
 
@@ -45,6 +46,6 @@
         width: 100%;
         gap: 20px;
         height: 40px;
-        margin-top: 10px;
+        
     }
 }
