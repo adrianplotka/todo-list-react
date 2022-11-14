@@ -3,7 +3,9 @@
 This page has a simple task organizer. Here you can add the task you want to add and then mark that we have done it. It also allows you to remove a task that is not interesting for you
 
 ### Demo
-https://adrianplotka.github.io/todo-list-react/
+[Project]https://adrianplotka.github.io/todo-list-react/
+
+<img src=public/readme.png alt= "Layout" max-width="800px">
 #
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
