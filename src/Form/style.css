@@ -33,6 +33,7 @@
 @media(max-width:767px) {
     .form {
         flex-direction: column;
+        
     }
 
     .form__text {
@@ -44,5 +45,6 @@
         width: 100%;
         gap: 20px;
         height: 40px;
+        margin-top: 10px;
     }
 }
