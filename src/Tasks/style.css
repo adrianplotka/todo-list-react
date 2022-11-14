@@ -29,6 +29,7 @@
 
 .list__button--green {
     background-color: hsl(120, 100%, 30%);
+    color: white;
     border: none;
 }
 
