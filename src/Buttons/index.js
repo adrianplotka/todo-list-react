@@ -1,24 +1,23 @@
-import "./style.css";
+import { InteractiveButtons, StyledButton } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toogleHideDone, setAllDone }) => (
-    <div className="buttons">
+    <InteractiveButtons>
         {tasks.length > 0 && (
             <>
-                <button
+                <StyledButton
                     onClick={toogleHideDone}
-                    className="buttons__button">
+                >
                     {hideDone ? "Pokaż ukończone" : "Ukryj ukończone"}
-                </button>
-                <button
+                </StyledButton>
+                <StyledButton
                     onClick={setAllDone}
-                    className="buttons__button"
                     disabled={tasks.every(({ done }) => done)}
                 >
                     Ukończ wszystkie
-                </button>
+                </StyledButton>
             </>
         )}
-    </div>
+    </InteractiveButtons>
 );
 
 export default Buttons;
