@@ -11,7 +11,7 @@ export const StyledForm = styled.form`
     }
 `;
 
-export const Text = styled.input`
+export const StyledInput = styled.input`
     width: 82%;
     border: 2px solid ${({ theme }) => theme.color.SwissCoffee};
     padding-left: 10px;

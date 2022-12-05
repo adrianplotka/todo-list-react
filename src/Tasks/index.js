@@ -5,17 +5,17 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
 		{tasks.map(task => (
 			<Item
 				key={task.id}
-        hidden={task.done && hideDone}
+				hidden={task.done && hideDone}
 				>
-				<Button 
-               toogleDone
+				<Button
+					toogleDone
 					onClick={() => toggleTaskDone(task.id)}
 				>
 					{task.done ? " ✔ " : ""}
 				</Button>
-        <Content done={task.done}>
-          {task.content}
-        </Content>
+				<Content done={task.done}>
+					{task.content}
+				</Content>
 				<Button
 					remove
 					onClick={() => removeTask(task.id)}
