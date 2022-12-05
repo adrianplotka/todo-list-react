@@ -9,7 +9,7 @@ export const Item = styled.li`
     grid-template-columns: auto 1fr auto;
     gap:20px;
     padding: 10px;
-    border-bottom: 2px solid hsl(0deg 0% 90%);
+    border-bottom: 2px solid ${({ theme }) => theme.color.mercury};
     align-items: center;
 
     ${({hidden}) => hidden && css`
@@ -31,29 +31,29 @@ export const Button = styled.button`
     cursor: pointer;
 
     ${({toogleDone}) => toogleDone && css`
-        background-color: hsl(120, 100%, 30%);
-        color: white;
+        background-color: ${({ theme }) => theme.color.green};
+        color: ${({ theme }) => theme.color.white};
         border: none;
 
         &:hover {
-            background-color: hsl(120, 100%, 35%)
+            filter: brightness(110%);
         }
 
         &:active {
-            background-color: hsl(120, 100%, 40%)
+            filter: brightness(120%);
         }
     `}
 
     ${({remove}) => remove && css`
-        background-color: hsl(0, 100%, 40%);
+        background-color: ${({ theme }) => theme.color.red};
         border: none;
 
         &:hover {
-            background-color: hsl(0, 100%, 45%);
+            filter: brightness(110%);
         }
 
         &:active {
-            background-color: hsl(0, 100%, 50%);
+            filter: brightness(120%);
         }
     `}
 `;

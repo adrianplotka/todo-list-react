@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const StyledForm = styled.form`
     padding: 20px;
@@ -6,18 +6,17 @@ export const StyledForm = styled.form`
     gap: 15px;
     justify-content: space-between;
 
-    @media(max-width:767px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         flex-direction: column;
     }
 `;
 
 export const Text = styled.input`
     width: 82%;
-    border-color: hsl(0deg 0% 90%);
-    border: 2px solid #dad5d5;
+    border: 2px solid ${({ theme }) => theme.color.SwissCoffee};
     padding-left: 10px;
 
-    @media(max-width:767px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         width: 100%;
         height: 40px;
     }
@@ -26,22 +25,22 @@ export const Text = styled.input`
 export const Button = styled.button`
     width: 17%;
     height: 40px;
-    background-color: teal;
-    color: white;
-    border: 2px solid teal;
+    background-color: ${({ theme }) => theme.color.teal};
+    color: ${({ theme }) => theme.color.white};
+    border: 2px solid${({ theme }) => theme.color.teal};
     cursor: pointer;
     transition: 1s;
 
     &:hover {
-        background-color: hsl(180, 100%, 30%);
+        filter: brightness(110%);
         transform: scale(1.05);
     }
 
     &:active {
-        background-color: hsl(180, 100%, 35%);
+        filter: brightness(120%);
     }
 
-    @media(max-width:767px) {
+    @media(max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
         width: 100%;
         gap: 20px;
         height: 40px;

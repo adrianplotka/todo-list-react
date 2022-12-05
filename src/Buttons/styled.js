@@ -8,20 +8,24 @@ export const InteractiveButtons = styled.div`
 export const StyledButton = styled.button`
     background-color: transparent;
     border: none;
-    color: hsl(180, 100%, 30%);
+    color: ${({ theme }) => theme.color.teal};
     padding: 15px;
     transition: 1s;
     cursor: pointer;
 
     &:hover {
-        color: hsl(180, 100%, 35%);
+        filter: brightness(110%);
+    }
+
+    &:active {
+        filter: brightness(120%);
     }
 
     &:disabled {
-        color: rgb(170, 163, 163);
+        color: ${({ theme }) => theme.color.silver}
     }
 
-    @media(max-width:767px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
        display: flex;
        width: 100%;
        justify-content: center
