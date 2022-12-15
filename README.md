@@ -3,12 +3,27 @@
 This page has a simple task organizer. Here you can add the task you want to add and then mark that we have done it. It also allows you to remove a task that is not interesting for you
 
 ### Demo
-[Project](https://adrianplotka.github.io/todo-list-react/)
+[Project webside - click to redirect](https://adrianplotka.github.io/todo-list-react/)
 
 <img src=public/readme.png alt= "Layout" max-width="800px">
-#
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Languages 
+
+- HTML
+- CSS
+- BEM
+- Flex, Grid
+- Responsive Web Design 
+- Styled Components 
+- JavaScript
+- ES6+ features 
+- React.js
+- React Hooks: useState, useEffect, UseRef, own React Hooks
+- Redux
+- Work with API
+
 
 ## Available Scripts
 
