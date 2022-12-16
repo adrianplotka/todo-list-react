@@ -22,8 +22,9 @@ const tasksSlice = createSlice({
                 tasks[task].done = true;
             }
         },
-        removeTask: (state, action) => {
-            state.tasks = state.tasks.filter((task) => task.id !== action.payload);
+        removeTask: ({tasks}, {payload}) => {
+            const index = tasks.findIndex(({id}) => id === payload)
+            tasks.splice(index, 1);
         },
     },
 });
