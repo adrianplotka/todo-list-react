@@ -5,9 +5,8 @@ This page has a simple task organizer. Here you can add the task you want to add
 ### Demo
 [Project webside - click to redirect](https://adrianplotka.github.io/todo-list-react/)
 
-<img src=public/readme.png alt= "Layout" max-width="800px">
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Preview
+![Demo](readme.gif)
 
 ## Languages 
 
@@ -22,6 +21,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React.js
 - React Hooks: useState, useEffect, UseRef, own React Hooks
 - Redux
+- React Ruter
+- React toolkit
+- Saga
 - Work with API
 
 
