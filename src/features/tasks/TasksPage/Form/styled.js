@@ -1,24 +1,12 @@
 import styled from "styled-components";
 
 export const StyledForm = styled.form`
-    padding: 20px;
     display: flex;
     gap: 15px;
     justify-content: space-between;
 
     @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         flex-direction: column;
-    }
-`;
-
-export const StyledInput = styled.input`
-    width: 82%;
-    border: 2px solid ${({ theme }) => theme.color.SwissCoffee};
-    padding-left: 10px;
-
-    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        width: 100%;
-        height: 40px;
     }
 `;
 
@@ -45,5 +33,4 @@ export const Button = styled.button`
         gap: 20px;
         height: 40px;
     }
-    
 `;
