@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 
 export const List = styled.ul`
     padding: 10px;
+    margin: 0px;
 `;
 
 export const Item = styled.li`
@@ -12,6 +13,7 @@ export const Item = styled.li`
     padding: 10px;
     border-bottom: 2px solid ${({ theme }) => theme.color.mercury};
     align-items: center;
+    
 
     ${({hidden}) => hidden && css`
         display: none;

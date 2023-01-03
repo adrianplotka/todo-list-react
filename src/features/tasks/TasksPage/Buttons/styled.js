@@ -9,7 +9,7 @@ export const StyledButton = styled.button`
     background-color: transparent;
     border: none;
     color: ${({ theme }) => theme.color.teal};
-    padding: 15px;
+    /* padding: 15px; */
     transition: color 0.3s;
     cursor: pointer;
 
