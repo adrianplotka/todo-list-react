@@ -10,7 +10,7 @@ export const StyledButton = styled.button`
     border: none;
     color: ${({ theme }) => theme.color.teal};
     padding: 15px;
-    transition: 1s;
+    transition: color 0.3s;
     cursor: pointer;
 
     &:hover {

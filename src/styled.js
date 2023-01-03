@@ -24,14 +24,14 @@ export const StyledLi = styled.li`
 `;
 
 export const StyledNavLink = styled(NavLink)`
-    color: white;
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
     &.active {
-        color: white;
-        font-weight: bold;
+        background-color: white;
+        color: ${({ theme }) => theme.color.teal};
+        padding: 5px;
+        border-radius: 5px;
         };
-    
-    &:hover{
-        font-weight: bold;
-    };
+
 `

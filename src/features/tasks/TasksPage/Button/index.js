@@ -5,13 +5,13 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.color.teal};
     border: none;
     margin: 0 0 0 20px;
-    transition: color 0.3s;
+    transition: color 1s;
     
     &:hover {
-        filter: brightness(110%);
+        filter: brightness(120%);
     }
     &:active {
-        filter: brightness(120%);
+        filter: brightness(140%);
     }
     &:disabled {
         color: ${({ theme }) => theme.color.silver};

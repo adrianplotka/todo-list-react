@@ -6,7 +6,7 @@ export const StyledSection = styled.section`
 `;
 
 export const StyledHeader = styled.header`
-    padding-left: 20px;
+    padding: 0 20px 0 20px;
     display: grid;
     align-items: center;
     border-bottom: 2px solid ${({ theme }) => theme.color.mercury};
