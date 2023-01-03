@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route, HashRouter, Redirect } from "react-router-dom";
-import AuthorPage from "./features/authorPage/AuthorPage";
+import AuthorPage from "./features/author";
 import TasksPage from "./features/tasks/TasksPage"
 import TaskPage from "./features/tasks/TaskPage"
 import { StyledLi, StyledNav, StyledNavLink, StyledUl } from "./styled";
